@@ -1,4 +1,4 @@
-var lang = "Bangla"
+let lang = "Bangla"
 
 function learn(topic){
     lang = topic
@@ -9,13 +9,13 @@ learn("Javascript")
 
 console.log(`I am learning ${lang}`);
 
-//ekhane duitatei Javascript asbe karon global scope er lang k local scope access korte pare and change ou korte pare , only way to fix this issue is function er vitor jei variable ache setakeo var diye likha 
+//ekhane duitatei Javascript asbe karon global scope er lang k local scope access korte pare and change ou korte pare , only way to fix this issue is function er vitor jei variable ache setakeo var/let diye likha 
 
 
-var lang2 = "English"
+let lang2 = "English"
 
 function learn2(topic){
-    var lang2 = topic
+    let lang2 = topic
     console.log(`I am learning ${topic}`);
 }
 
