@@ -43,9 +43,6 @@ console.log(result9);
 const result10 = fruits.map((f)=> `${f} -`)
 console.log(result10);
 
-
-
-
 //push
 //main array k change kore felbe
 const result8 = fruits.push("Kiwi")
@@ -72,3 +69,29 @@ const result5 = fruits.splice(
 ); //2 ta element remove kore j 2 tai e add kora lagbe emon kono rule nai , I can add unlimited elements just oi 2 ta kete ene oi jaygay boshay dibe , ar ei fol pabo main array te
 console.log(result5); // 2 no. element theke 2 ta element k kete ene return kore dibe
 console.log(fruits);
+
+//for of loop
+//array ar string k iterate korte pare , object k iterate korte parena
+const numbers = [1,2,3,4,5,6]
+for(num of numbers){
+    console.log(num);
+}
+
+const name = "Nahid Parvez Mafi"
+for(char of name){
+    console.log(char);
+}
+
+//for in loop
+//object er jonno 
+
+const language ={
+    name : "Javascript",
+    year : 1995,
+    difficulity : "Medium"
+}
+
+for(key in language){
+    console.log(key);  //keys gula print korbe shudu
+    console.log(language[key]); //key er corresponding value gula print hobe
+}
